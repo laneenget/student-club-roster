@@ -88,7 +88,7 @@
         let idVal = document.querySelector('#student-id');
         let gpaVal = document.querySelector('#student-gpa');
 
-        if (studentVal.value != '' && idVal.value != '' && gpaVal.value != ''){
+        if (studentVal.value != '' && idVal.value != '' && gpaVal.value >= 1 && gpaVal.value <= 4){
             let studentLiEl = document.createElement('li');
             studentLiEl.innerHTML = `${studentVal.value} | ID ${idVal.value} | GPA ${gpaVal.value}`;
             studentLiEl.addEventListener('click', function(){
